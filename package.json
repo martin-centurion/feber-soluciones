@@ -4,7 +4,7 @@
   "description": "Proyecto final de CoderHouse",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/styles.css -w"
   },
   "repository": {
     "type": "git",
