@@ -1,0 +1,22 @@
+{
+  "name": "feber-martincenturion",
+  "version": "1.0.0",
+  "description": "Proyecto final de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss .css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-centurion/feber-soluciones.git"
+  },
+  "author": "Martin Centurion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-centurion/feber-soluciones/issues"
+  },
+  "homepage": "https://github.com/martin-centurion/feber-soluciones#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
