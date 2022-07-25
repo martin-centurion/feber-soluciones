@@ -1,0 +1,136 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 900px;
+    }
+
+    .banner__content {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: flex-end;
+
+        img {
+            margin: auto;
+            width: 80%;
+        }
+    }
+
+    .header__content {
+        display: flex;
+        flex-flow: column wrap;
+
+        ul {
+            margin-bottom: 20px;
+        }
+    }
+
+    .servicios__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+
+        ul {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 700px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-flow: column wrap;
+
+        ul {
+            margin-bottom: 10px;
+        }
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .banner__content {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: flex-end;
+    }
+
+    .servicios__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+
+        ul {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 400px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .banner {
+        margin: 20px;
+
+        .banner__content {
+            display: flex;
+            flex-flow: column wrap;
+            &-img {
+                display: none;
+            }
+        }
+    }
+    
+    .servicios__content {
+        display: flex;
+        flex-flow: column wrap;
+
+        &-title {
+            width: 300px;
+        }
+    }
+
+    .footer__content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .formulario {
+
+        input {
+            width: 300px;
+        }
+
+        textarea {
+            width: 300px;
+        }
+    }
+}

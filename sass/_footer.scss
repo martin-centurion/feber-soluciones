@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 20px;
+    padding: 20px 0 20px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin: 0 15px 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: rgba(243, 244, 238, 1);
+            font-size: 14px;
+            transition: all 0.3s;
+
+            &:hover {
+                border-bottom: solid 2px white;
+                padding-bottom: 10px;
+            }
+        }
+
+        i {
+            font-size: 20px;
+        }
+    }
+}

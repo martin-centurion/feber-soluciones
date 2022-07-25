@@ -1,0 +1,39 @@
+.header {
+    background-color: $ColorPrimario;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                i {
+                    font-size: 20px;
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        margin: 0 20px;
+                
+                        a {
+                            text-decoration: none;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 600;
+                            color: rgba(243, 244, 238, 1);
+                            font-size: 14px;
+                            transition: border-bottom 0.3s;
+
+                            &:hover {
+                                border-bottom: solid 2px $ColorSecundario;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+}
