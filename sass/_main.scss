@@ -1,22 +1,23 @@
 .banner {
     display: flex;
-    flex-flow: column row;
-    margin-top: 40px;
+    background-image: url(../assets/banner-inicio-1.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
 
         &__content {
-            display: flex;
-            align-self: center;
-            align-items: center;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
 
             h1 {
-                color: $ColorSecundario;
+                color: white;
                 font-size: 60px;
                 font-weight: bold;
                 margin-bottom: 30px;
+                line-height: 70px;
             }
 
             h2 {
-                color: $ColorPrimario;
+                color: white;
                 font-size: 25px;
                 font-weight: bolder;
                 font-style: italic;
@@ -25,14 +26,11 @@
             }
 
             p {
+                color: white;
                 font-size: 16px;
                 margin-bottom: 50px;
                 letter-spacing: 1.5px;
                 line-height: 25px;
-            }
-
-            &-img {
-                margin-left: 50px;
             }
     }
 }
@@ -43,18 +41,18 @@
     text-align: center;
     font-weight: 400;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 15px 40px;
     transition: all 0.5s;
 }
 
 .btn-principal {
     @extend .btn-base;
-    background-color: $ColorPrimario;
-    border: solid 2px $ColorPrimario;
+    background-color: $ColorSecundario;
+    border: solid 2px $ColorSecundario;
 
         &:hover {
-            background-color: $ColorSecundario;
-            border: solid 2px $ColorSecundario;
+            background-color: $ColorPrimario;
+            border: solid 2px $ColorPrimario;
          }
 }
 
@@ -65,7 +63,7 @@
 
         &:hover {
             color: $ColorWhatsapp;
-            background-color: white;
+            background-color: $FondoAlpha;
             border: solid 2px $ColorWhatsapp;
         }
 }
@@ -126,7 +124,7 @@
                     margin: 10px;
                     padding: 30px;
                     text-align: center;
-                    transition: all 0.6s;
+                    transition: all 0.5s;
             
                 &:hover {
                     transform: translateY(-15px);

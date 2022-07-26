@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .container {
         width: 900px;
     }
@@ -7,11 +7,6 @@
         display: flex;
         flex-flow: column-reverse wrap;
         align-items: flex-end;
-
-        img {
-            margin: auto;
-            width: 80%;
-        }
     }
 
     .header__content {
@@ -100,12 +95,9 @@
     .banner {
         margin: 20px;
 
-        .banner__content {
+        &__content {
             display: flex;
             flex-flow: column wrap;
-            &-img {
-                display: none;
-            }
         }
     }
     

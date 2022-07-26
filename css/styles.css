@@ -64,31 +64,31 @@ footer {
 
 .banner {
   display: flex;
-  flex-flow: column row;
-  margin-top: 40px; }
+  background-image: url(../assets/banner-inicio-1.jpg);
+  background-repeat: no-repeat;
+  height: 700px; }
   .banner__content {
-    display: flex;
-    align-self: center;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
     .banner__content h1 {
-      color: #e7423c;
+      color: white;
       font-size: 60px;
       font-weight: bold;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      line-height: 70px; }
     .banner__content h2 {
-      color: #2a2c3b;
+      color: white;
       font-size: 25px;
       font-weight: bolder;
       font-style: italic;
       margin-bottom: 50px;
       line-height: 30px; }
     .banner__content p {
+      color: white;
       font-size: 16px;
       margin-bottom: 50px;
       letter-spacing: 1.5px;
       line-height: 25px; }
-    .banner__content-img {
-      margin-left: 50px; }
 
 .btn-base, .btn-principal, .btn-whatsapp {
   color: white;
@@ -96,22 +96,22 @@ footer {
   text-align: center;
   font-weight: 400;
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 15px 40px;
   transition: all 0.5s; }
 
 .btn-principal {
-  background-color: #2a2c3b;
-  border: solid 2px #2a2c3b; }
+  background-color: #e7423c;
+  border: solid 2px #e7423c; }
   .btn-principal:hover {
-    background-color: #e7423c;
-    border: solid 2px #e7423c; }
+    background-color: #2a2c3b;
+    border: solid 2px #2a2c3b; }
 
 .btn-whatsapp {
   background-color: #1dd639;
   border: solid 2px #1dd639; }
   .btn-whatsapp:hover {
     color: #1dd639;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border: solid 2px #1dd639; }
 
 .card {
@@ -157,7 +157,7 @@ footer {
       margin: 10px;
       padding: 30px;
       text-align: center;
-      transition: all 0.6s; }
+      transition: all 0.5s; }
       .servicios__content article:hover {
         transform: translateY(-15px);
         background-color: rgba(42, 44, 59, 0.1);
@@ -254,16 +254,13 @@ button {
     .footer__content i {
       font-size: 20px; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .container {
     width: 900px; }
   .banner__content {
     display: flex;
     flex-flow: column-reverse wrap;
     align-items: flex-end; }
-    .banner__content img {
-      margin: auto;
-      width: 80%; }
   .header__content {
     display: flex;
     flex-flow: column wrap; }
@@ -316,11 +313,9 @@ button {
     flex-flow: column wrap; }
   .banner {
     margin: 20px; }
-    .banner .banner__content {
+    .banner__content {
       display: flex;
       flex-flow: column wrap; }
-      .banner .banner__content-img {
-        display: none; }
   .servicios__content {
     display: flex;
     flex-flow: column wrap; }
