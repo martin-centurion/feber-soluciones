@@ -24,6 +24,22 @@ footer {
     background-color: $ColorSecundario;
 }
 
+.whatsapp-icono {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    font-size: 40px;
+    background-color: $ColorWhatsapp;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+
+    a {
+        color: white;
+    }
+
+}
+
 $redesSociales: (
     facebook: $ColorSecundario,
     instagram: $ColorSecundario, 

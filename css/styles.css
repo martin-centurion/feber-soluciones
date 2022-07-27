@@ -19,6 +19,18 @@ span {
 footer {
   background-color: #e7423c; }
 
+.whatsapp-icono {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 40px;
+  background-color: #1dd639;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px 20px; }
+  .whatsapp-icono a {
+    color: white; }
+
 .link-facebook {
   margin: 0 5px;
   padding: 10px;
