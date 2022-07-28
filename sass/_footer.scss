@@ -21,11 +21,10 @@
             font-weight: 600;
             color: rgba(243, 244, 238, 1);
             font-size: 14px;
-            transition: all 0.3s;
+            transition: color 0.3s;
 
             &:hover {
-                border-bottom: solid 2px white;
-                padding-bottom: 10px;
+                color: $ColorPrimario;
             }
         }
 

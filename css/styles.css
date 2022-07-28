@@ -23,13 +23,17 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 20px;
-  font-size: 40px;
-  background-color: #1dd639;
-  text-decoration: none;
-  border-radius: 50%;
-  padding: 10px 20px; }
+  font-size: 40px; }
   .whatsapp-icono a {
-    color: white; }
+    color: white;
+    background-color: #1dd639;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    transition: all 0.5s; }
+    .whatsapp-icono a:hover {
+      color: #1dd639;
+      background-color: white; }
 
 .link-facebook {
   margin: 0 5px;
@@ -56,8 +60,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .header__content i {
-      font-size: 20px; }
     .header__content ul {
       display: flex;
       justify-content: space-around; }
@@ -69,10 +71,9 @@ footer {
           font-weight: 600;
           color: #f3f4ee;
           font-size: 14px;
-          transition: border-bottom 0.3s; }
+          transition: color 0.3s; }
           .header__content ul li a:hover {
-            border-bottom: solid 2px #e7423c;
-            padding-bottom: 10px; }
+            color: #e7423c; }
 
 .banner {
   display: flex;
@@ -85,15 +86,15 @@ footer {
     .banner__content h1 {
       color: white;
       font-size: 60px;
-      font-weight: bold;
+      font-weight: 400;
       margin-bottom: 30px;
       line-height: 70px; }
     .banner__content h2 {
       color: white;
       font-size: 25px;
-      font-weight: bolder;
+      font-weight: 400;
       font-style: italic;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       line-height: 30px; }
     .banner__content p {
       color: white;
@@ -101,6 +102,22 @@ footer {
       margin-bottom: 50px;
       letter-spacing: 1.5px;
       line-height: 25px; }
+
+.btn-rrss, .btn-facebook, .btn-instagram {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.5s; }
+  .btn-rrss:hover, .btn-facebook:hover, .btn-instagram:hover {
+    color: #e7423c;
+    background-color: white; }
+
+.btn-facebook {
+  background-color: #e7423c; }
+
+.btn-instagram {
+  background-color: #e7423c; }
 
 .btn-base, .btn-principal, .btn-whatsapp {
   color: white;
@@ -179,13 +196,13 @@ footer {
       .servicios__content article img {
         text-align: left;
         margin-bottom: 20px; }
-      .servicios__content article h1 {
+      .servicios__content article h2 {
         color: #e7423c;
         text-align: center;
-        font-size: 30px;
-        margin-bottom: 40px; }
+        font-size: 25px;
+        margin-bottom: 20px; }
       .servicios__content article p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         line-height: 24px;
         margin-bottom: 40px; }
@@ -259,10 +276,9 @@ button {
       font-weight: 600;
       color: #f3f4ee;
       font-size: 14px;
-      transition: all 0.3s; }
+      transition: color 0.3s; }
       .footer__content a:hover {
-        border-bottom: solid 2px white;
-        padding-bottom: 10px; }
+        color: #2a2c3b; }
     .footer__content i {
       font-size: 20px; }
 
