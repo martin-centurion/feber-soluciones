@@ -70,7 +70,7 @@
 
 @media (max-width: 490px) {
     .container {
-        width: 380px;
+        width: 320px;
     }
 
     .banner {
@@ -108,35 +108,47 @@
         }
 
         &-title {
-            width: 300px;
+            width: 260px;
+        }
+
+        img {
+            width: 240px;
+        }
+
+        &-iconos img {
+            width: 60px;
         }
     }
 
     .formulario {
 
         input {
-            width: 300px;
+            width: 260px;
         }
 
         textarea {
-            width: 300px;
+            width: 260px;
         }
     }
-}
 
-@media (max-width: 380px) {
-    .container {
-        width: 320px;
+    .footer__content-navbar {
+        display: none;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
     .container {
-        width: 280px;
+        width: 300px;
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 300px) {
+    .container {
+        width: 260px;
+    }
+}
+
+@media (max-width: 260px) {
     .container {
         width: 240px;
     }
