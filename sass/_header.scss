@@ -18,17 +18,54 @@
                 
                         a {
                             text-decoration: none;
-                            font-family: 'Montserrat', sans-serif;
                             font-weight: 600;
                             color: rgba(243, 244, 238, 1);
-                            font-size: 14px;
+                            font-size: 15px;
                             transition: color 0.3s;
 
                             &:hover {
                                 color: $ColorSecundario;
+
                             }
                         }
                     }
                 }
+
+                &-navbar-mobile {
+                   display: none;
+
+                   &:hover > ul {
+                    display: block;
+                   }
+
+                    i {
+                        font-size: 25px;
+                        color: white;
+                    }
+
+                    ul {
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                        top: 100px;
+                        width: 100%;
+                        background-color: $ColorPrimario;
+
+                        li {
+                            padding: 25px 0;
+                            text-align: center;
+
+                            a {
+                                color: white;
+                                font-weight: bold;
+                            }
+
+                            &:nth-child(even) {
+                                background-color: lighten($ColorPrimario, 3%)
+                            }
+                        }
+                    }
+                }
+
             }
 }

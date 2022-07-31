@@ -72,6 +72,7 @@
     @extend .btn-base;
     background-color: $ColorSecundario;
     border: solid 2px $ColorSecundario;
+    margin-right: 20px;
 
         &:hover {
             background-color: $ColorPrimario;

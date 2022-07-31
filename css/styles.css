@@ -67,13 +67,34 @@ footer {
         margin: 0 20px; }
         .header__content ul li a {
           text-decoration: none;
-          font-family: 'Montserrat', sans-serif;
           font-weight: 600;
           color: #f3f4ee;
-          font-size: 14px;
+          font-size: 15px;
           transition: color 0.3s; }
           .header__content ul li a:hover {
             color: #e7423c; }
+    .header__content-navbar-mobile {
+      display: none; }
+      .header__content-navbar-mobile:hover > ul {
+        display: block; }
+      .header__content-navbar-mobile i {
+        font-size: 25px;
+        color: white; }
+      .header__content-navbar-mobile ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        background-color: #2a2c3b; }
+        .header__content-navbar-mobile ul li {
+          padding: 25px 0;
+          text-align: center; }
+          .header__content-navbar-mobile ul li a {
+            color: white;
+            font-weight: bold; }
+          .header__content-navbar-mobile ul li:nth-child(even) {
+            background-color: #303344; }
 
 .banner {
   display: flex;
@@ -130,7 +151,8 @@ footer {
 
 .btn-principal {
   background-color: #e7423c;
-  border: solid 2px #e7423c; }
+  border: solid 2px #e7423c;
+  margin-right: 20px; }
   .btn-principal:hover {
     background-color: #2a2c3b;
     border: solid 2px #2a2c3b; }
@@ -234,7 +256,8 @@ select {
   height: 40px; }
 
 input {
-  border: 0;
+  border: solid 2px #2a2c3b;
+  border-radius: 10px;
   background-color: #e2e2e2;
   height: 40px;
   width: 400px;
@@ -242,13 +265,14 @@ input {
   margin-bottom: 30px; }
 
 textarea {
+  border: solid 2px #2a2c3b;
   display: flex;
   height: 200px;
   width: 400px;
+  border-radius: 10px;
   padding: 10px;
   margin-bottom: 30px;
-  background-color: #e2e2e2;
-  border: 0; }
+  background-color: #e2e2e2; }
 
 button {
   width: 150px;
@@ -258,6 +282,8 @@ button {
   color: white;
   border: 0;
   border-radius: 10px; }
+  button:hover {
+    background-color: #2a2c3b; }
 
 .footer {
   margin-top: 20px;
@@ -285,11 +311,6 @@ button {
 @media (max-width: 1200px) {
   .container {
     width: 1000px; }
-  .header__content {
-    display: flex;
-    flex-flow: column wrap; }
-    .header__content ul {
-      margin-bottom: 20px; }
   .servicios__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -302,11 +323,12 @@ button {
 @media (max-width: 768px) {
   .container {
     width: 700px; }
-  .header__content {
-    display: flex;
-    flex-flow: column wrap; }
-    .header__content ul {
-      margin-bottom: 10px; }
+  .header__content-navbar {
+    display: none; }
+  .header__content-rrss {
+    display: none; }
+  .header__content-navbar-mobile {
+    display: block; }
   .card {
     display: grid;
     grid-template-columns: 1fr;
@@ -327,18 +349,33 @@ button {
 
 @media (max-width: 480px) {
   .container {
-    width: 440px; }
+    width: 380px; }
   .banner {
     padding: 20px; }
     .banner__content {
       display: flex;
       flex-flow: column wrap; }
+      .banner__content h1 {
+        font-size: 40px;
+        line-height: 50px; }
+      .banner__content h2 {
+        font-size: 25px; }
+      .banner__content p {
+        font-size: 14px; }
   .servicios__content {
     display: flex;
     flex-flow: column wrap; }
+    .servicios__content article h2 {
+      font-size: 20px; }
+    .servicios__content article p {
+      font-size: 14px; }
     .servicios__content-title {
       width: 300px; }
   .formulario input {
     width: 300px; }
   .formulario textarea {
+    width: 300px; } }
+
+@media (max-width: 320px) {
+  .container {
     width: 300px; } }

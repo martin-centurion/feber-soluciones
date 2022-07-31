@@ -25,7 +25,8 @@ select {
 }
 
 input {
-    border: 0;
+    border: solid 2px $ColorPrimario;
+    border-radius: 10px;
     background-color: rgb(226, 226, 226);
     height: 40px;
     width: 400px;
@@ -34,13 +35,14 @@ input {
 }
 
 textarea {
+    border: solid 2px $ColorPrimario;
     display: flex;
     height: 200px;
     width: 400px;
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 30px;
     background-color: rgb(226, 226, 226);
-    border: 0;
 }
 
 button {
@@ -51,4 +53,8 @@ button {
     color: white;
     border: 0;
     border-radius: 10px;
+
+    &:hover {
+        background-color: $ColorPrimario;
+    }
 }
