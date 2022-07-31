@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .container {
-        width: 1000px;
+        width: 768px;
     }
 
     .servicios__content {
@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {
     .container {
-        width: 700px;
+        width: 490px;
     }
 
     .header__content {
@@ -68,7 +68,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     .container {
         width: 380px;
     }
@@ -124,8 +124,20 @@
     }
 }
 
+@media (max-width: 380px) {
+    .container {
+        width: 320px;
+    }
+}
+
 @media (max-width: 320px) {
     .container {
-        width: 300px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 240px;
     }
 }
